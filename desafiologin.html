@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        body {
+            text-align: center;
+            background-image: url("images/ChatGPT\ Image\ 17\ de\ ago.\ de\ 2025\,\ 17_40_52.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-color: brown;
+            color: white;
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 47px;
+        }
+        .login {
+            background-color: rgb(0 0 0 / 90%);
+            text-align: center;
+            width: 332px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            margin-top: 120px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;    
+            align-items: center;
+        }
+        #username {
+            width: 233px;
+            height: 41px;
+            border-radius: 5px;
+            border: none;
+            background-color: grey;
+            color: white;
+            
+        }
+        #username:hover {
+            background-color: rgb(195, 199, 202);
+        }
+        #password {
+            width: 233px;
+            height: 41px;
+            border-radius: 5px;
+            border: none;
+            background-color: grey;
+            color: white;
+        }
+        #password:hover {
+            background-color: rgb(195, 199, 202);
+        }
+        #submit {
+            width: 233px;
+            height: 41px;
+            border-radius: 5px;
+            border: none;
+            background-color: red;
+            text-align: left;
+            color: white;
+            margin-top: 10px;
+        }
+        #submit:hover {
+            background-color: rgb(165, 1, 1);
+        }
+        ::placeholder {
+            color: rgb(249, 252, 255);
+            padding-left: 10px;
+        }
+        img {
+            width: 1400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form >
+            <input type="username" id="username" placeholder="Login">
+            <input type="password" id="password" placeholder="password">
+        </form>
+        <button onclick="gatos()" id="submit" >Enviar</button>
+        <p>Login</p>
+    </div>
+    <span id="gatos"></span>
+</body>
+<script>
+    function gatos(){
+        document.getElementById('gatos').innerHTML = '<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRqMmJ5OHBtcWE1cDc5Ym42NXJ0d2kxNnhlZmhjb2N5NTdxOWV5eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif" alt="" srcset="">'
+
+        const fundo = document.getElementsByClassName('login')[0];
+
+        fundo.style.display = 'none';
+    }
+</script>
+</html>

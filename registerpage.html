@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            background-image: linear-gradient(45deg, #000000, #0e2009);
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .principal {
+            background-color: black;
+            width: 900px;
+            height: 600px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        .cadastro {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 60px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        #username {
+            height: 40px;
+            width: 300px;
+            background-color: black;
+            border-bottom: 2px solid rgba(40, 146, 40, 0.5);
+            border-left: none;
+            border-top: none;
+            border-right: none;
+        }
+        #username:hover{
+            border-bottom: 2px solid rgba(51, 190, 51, 0.5);
+        }
+        #password {
+            height: 40px;
+            width: 300px;
+            background-color: black;
+            border-bottom: 2px solid rgba(40, 146, 40, 0.5);
+            border-left: none;
+            border-top: none;
+            border-right: none;
+        }
+        #password:hover{
+            border-bottom: 2px solid rgba(51, 190, 51, 0.5);
+        }
+
+        #email {
+            height: 40px;
+            width: 300px;
+            background-color: black;
+            border-bottom: 2px solid rgba(40, 146, 40, 0.5);
+            border-left: none;
+            border-top: none;
+            border-right: none;
+        }
+        #email:hover{
+            border-bottom: 2px solid rgba(51, 190, 51, 0.5);
+        }
+
+        ::placeholder {
+            color: white;
+
+        }
+        #submit {
+            background-color: #286d28;
+            border: none;
+            border-radius: 20px;
+            width: 231px;
+            height: 40px;
+            color: white;
+        }
+        #submit:hover {
+            background-color: rgb(1, 165, 1);
+        }
+
+        .submit-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        img {
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="principal">
+        <div class="cadastro">
+            <h1>Sing in</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus cum</p>
+                    <form action="">
+                        <input type="username" id="username" placeholder="Username">
+                        <input type="password" id="password" placeholder="password">
+                        <input type="email" id="email" placeholder="email">
+                        <div class="submit-container">
+                            <input type="submit" id="submit">
+                        </div>
+                        
+                    </form>
+        </div>
+        
+        <img src="images/4e1805308d19f65a4a4d6331075377c0.jpg" alt="" srcset="">
+    </div>
+    
+</body>
+</html>
