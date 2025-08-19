@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body, html {
+      margin: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: black;
+    }
+
+    h1 {
+        font-size: 280px;
+    }
+
+    .parallax-container {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      background-image: url("image.png") ;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .parallax-bg {
+      position: absolute;
+      top: 285px;
+      left: 0;
+      width: 50%;
+      height: 68%;
+      /* Here's the fix: Use BATMAN.png as the background image */
+      background-image: url('image copy 2.png');
+      background-size: cover;
+      background-position: center;
+      /* Transição suave para o movimento */
+      transition: transform 0.1s ease-out;
+    }
+
+    .parallax-content {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      height: 100vh;
+      padding: 50px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+    }
+
+    img {
+      height: 409px;
+      padding-top: 139px;
+    }
+    article {
+      width: 400px;
+      margin-left: 400px;
+    }
+      
+    
+    </style>
+    
+</head>
+<body>
+    
+   <section class="parallax-container">
+    <h1>BATMAN</h1>
+     <div class="parallax-bg"></div>
+     <div class="parallax-content">
+        
+   
+     </div>
+   </section>
+
+<section class="content">
+
+  <article>
+    <h2>Primeira HQ</h2>
+    <p>O personagem Batman fez sua primeira aparição nas páginas da Detective Comics #27 em Maio de 1939. Na Primavera de 1940, Batman #1 foi publicada e incluiu novos personagens no panteão do Batman, os mais notáveis foram a Mulher-Gato e seu arqui-inimigo, o Coringa.[2] Alfred Pennyworth, o mordomo da família Wayne, foi apresentado na edição #16 (Abril–Maio de 1943).[3]
+
+  O editor-chefe da DC Comics Whitney Ellsworth atribuiu uma história de Batman ao artista Dick Sprang em 1941.[4] Prevendo que Bob Kane seria convocado para servir na Segunda Guerra Mundial, a DC contratou o jovem Sprang para os desenhar as histórias do Batman e proteger contras eventuais atrasos.[4] O primeiro trabalho publicado do Batman por Sprang foram os traços nas figuras do Batman e Robin na capa de Batman #18 (Ago.-Set. de 1943). O primeiro trabalho original publicado do Batman por Sprang apareceram em Batman #19 (Out.–Nov. de 1943), na qual ele desenhou a arte da capa e três das quatro histórias, além dos esboços da quarta história que saiu com arte-final de Norm Fallon. Assim como todos os artistas do Batman da época, Sprang engrossou a extensa lista de desenhadores-fantasma do Batman, pois havia, uma cláusula contratual, imposta por Kane, que impedia qualquer artista, que não ele, de ser creditado pelo seu trabalho com o Cavaleiro das Trevas.
+
+  Os vilões que estrearam durante o início desta era foram o Chapeleiro Louco na edição #49 (Outubro de 1948)[5] e o Mariposa Assassina na edição #63 (Fevereiro de 1951).[6] Em 1953, Sheldon Moldoff tornou-se outro dos principais artistas-fantasma do Batman que, ao lado de Win Mortimer e Dick Sprang, desenharam historietas creditadas a Bob Kane, seguindo o estilo de Kane e sob sua supervisão.[7] Bill Finger e Moldoff apresentaram Ace o Bat-Cão em #92 (Junho de 1955).[8]</p>
+  </article>
+  <img src="image copy.png" alt="" srcset="">
+  <p>...</p>
+</section>
+</body>
+    <script>
+        window.addEventListener('scroll', function() {
+        const scrolled = window.scrollY;
+        const parallaxBg = document.querySelector('.parallax-bg');
+        const parallaxBt = document.querySelector('h1');
+        const parallaxBc = document.querySelector('parallax-container');
+
+        // Move o plano de fundo para cima a 50% da velocidade de rolagem
+        parallaxBg.style.transform = 'translateY(' + scrolled * 1.9 + 'px)';
+        parallaxBt.style.transform = 'translateY(' + scrolled * -0.9 + 'px)';
+        parallaxBc.style.transform = 'translateY(' + scrolled * 1 + 'px)';
+      }); 
+
+
+
+    </script>
+</html>
